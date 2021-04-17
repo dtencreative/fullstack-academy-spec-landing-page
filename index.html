@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+  <meta charset='UTF-8'>
+  <title>FullStack Academy Offer</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <script src="sketch.js"></script>
+  
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="close-btn" onclick="togglePopup()">&times;</div>
+      <h1 style="color:red">Sign Up to Our Newsletter to</h1>
+      <h1 style="color:red">Get Exclusive Student Discounts!</h1>
+      <div class="form">
+        <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"> 
+            <input id="nameField" name="entry.90391935" placeholder="Name" type="text" required> 
+            <input id="emailField" name="entry.2087298110" placeholder="Email" type="email" required> 
+            <input id="mobField" name="entry.620120297" placeholder="Phone Number" type="text" pattern="^\d{10}$" required> 
+            <button id="send" type="submit" class="common_btn" style="background-color:red" href="http://www.google.com/">Sign Up Now
+            </button>
+        </form>
+        </div>
+          <p>*We	highly	value	your	trust	and	confidence	in	us	and	want	to	assure	you	that	your	personal	
+            information	is	kept	completely	confidential	by	us.	</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="logo">
+          <a href="https://www.fullstackacademy.com/" target="_blank"> 
+            <img src="images\myimages\navimages\fa-logo@2x 1.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-wrapper">
+      <div class="hero-img-wrapper">
+        <div class="hero-img-background" style="background-image:url(images/hero-image.png)"></div>
+
+        <div class="hero-content">
+          <div class="hero-button">
+            <button class="button" onclick="togglePopup()">Make Your Move</button> 
+          </div>
+          
+          <div class="hero-text">
+            Comprehensive, project-based<br> 
+            curriculum and expert-led instruction.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-wrapper">
+      <div class="body-header">
+        What's in the Course?
+      </div>
+      <div class="body-blocks">
+        <div class="body-block">
+          <img src="images\myimages\Group 8.png" alt="">
+          <div class="body-block-text">
+            HTML & CSS
+          </div>
+        </div>
+        <div class="body-block-other">
+          <img src="images\myimages\Group 8.png" alt="">
+          <div class="body-block-text">
+            JavaScript Basics
+          </div>
+        </div>
+        <div class="body-block">
+          <img src="images\myimages\Group 8.png" alt="">
+          <div class="body-block-text">
+            Web development Environment
+          </div>
+        </div>
+        <div class="body-block-other">
+          <img src="images\myimages\Group 8.png" alt="">
+          <div class="body-block-text">
+            Advanced Front-end Workflow
+          </div>
+        </div>
+        <div class="body-block">
+          <img src="images\myimages\Group 8.png" alt="">
+          <div class="body-block-text">
+            Advanced Back-end Worflow
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="awards-wrapper">
+      <div class="award">
+        <img src="images\myimages\testimages\best_coding_bootcamp_2020-2021 1.png" alt="">
+      </div>
+      <div class="award">
+        <img src="images\myimages\testimages\course_report_best_cybersecurity_2021_badge_green 1.png" alt="">
+      </div>
+      <div class="award">
+        <img src="images\myimages\testimages\switchup_2020 1.png" alt="">
+      </div>
+      <div class="award">
+        <img src="images\myimages\testimages\top_10 1.png" alt="">
+      </div>
+    </div>
+
+    <div class="testimonials-wrapper">
+      <div class="testimonials-text">
+        “Fullstack is a cut above every other bootcamp I applied to… Fullstack was one of the best experiences of my life.”
+      </div>
+      <div class="testimonials-wrapper-bottom">
+        <div class="testimonials-wrapper-name">
+          John Doe - Full Stack Graduate<br>
+          Google Engineer
+        </div>
+        <div class="testimonials-wrapper-picture">
+          <img src="images\myimages\testimages\John Doe.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="action-wrapper">
+      <div class="action-header">
+        Why Attend Fullstack Academy?
+      </div>
+      <div class="action-body">
+        <div class="action-wrapper-left">
+          <div class="action-text">
+            Fullstack Academy is a top-ranked immersive school for tech training. 
+            Offering comprehensive in-person and remote training opportunities across the U.S., 
+            Fullstack prepares students fulfilling tech careers.
+          </div>
+          <div class="action-bullet-points">
+            <ul>
+              <li>Learn in-demand skills</li>
+              <li>Choose a schedule that works for you</li>
+              <li>Build a strong network</li>
+              <li>Cultivate professional skills</li>
+            </ul>
+          </div>
+          <div class="action-button">
+            <button class="button2" onclick="togglePopup()">Learn About Our Programs</button> 
+          </div>
+        </div>
+        <div class="action-wrapper-right">
+          <img src="images\myimages\Software-Engineers_167160211-1 1.png" alt="" width="522" height="425";>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="footer-text">
+        Copyright @ 2021 FullStak Academy. All Rights Reserved.      
+      </div>
+    </div>
+</body>
+
+</html>
