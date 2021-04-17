@@ -18,7 +18,7 @@ alert('Please Fill Your Email');
 document.getElementById("emailField").focus();
 return false;
 }
-if(field3 == "" || field3.length > 12 || field3.length < 10){
+if(field3 == "" || field3.length > 11 || field3.length < 10){
 alert('Please Fill Your Mobile Number');
 document.getElementById("mobField").focus();
 return false;
